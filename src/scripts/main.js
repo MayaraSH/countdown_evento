@@ -23,8 +23,9 @@ const contaAsHoras = setInterval(function() {
 
     if (distanciaAteOEvento < 0) {
         clearInterval(contaAsHoras);
-        document.getElementById('contador').innerHTML = 'Evento expirado';
-    }
+        const textoHero = document.querySelector('.hero__text');
+        textoHero.innerHTML = 'Já nasceu nos trazendo muitas alegrias!';
+}
 }, 1000);
 
 //Popup
