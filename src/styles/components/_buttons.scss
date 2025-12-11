@@ -20,16 +20,33 @@
         }
     }
 
+
     // Responsividade
     @media (max-width: 1024px) {
         display: flex;
         align-items: center;
+        height: 45px;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
     }
 
     @media (max-width: 640px) {
         display: block;
         width: 100%;
+        margin-bottom: 12px;
     }
+
+    @media (max-height: 500px) and (orientation: landscape) {
+        display: block;
+    }
+
+    @media (max-width: 1024px) {
+        display: block; 
+        width: 100%;
+    }  
 }
 
 // ==== POPUP ====

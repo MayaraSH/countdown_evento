@@ -11,7 +11,7 @@
         display: flex;
         gap: 50px;
         padding: 0 8px;
-        align-items: center;
+        align-items:center;
 
         &__item {
             font-size: 14px;
@@ -37,7 +37,15 @@
         }
     }
 
+    @media (max-height: 500px) and (orientation: landscape) {
+        gap: 24px;
+        flex-direction: column;
+    }
+
     @media (max-width: 1024px) {
+        gap: 24px;
+        flex-direction: column;
+
         &__infos {
             gap: 16px;
         }
